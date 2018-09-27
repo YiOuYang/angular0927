@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   keyword = 'demo1';
+
+  doSearch(value) {
+    this.keyword = value;
+  }
+
+  doClear() {
+    this.keyword = '';
+  }
 }
