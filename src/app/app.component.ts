@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +10,11 @@ export class AppComponent {
   keyword = 'demo1';
   data: any[];
   max = 5;
-  constructor(private http: HttpClient) {
+  constructor(private datasvc: DataService) {
   }
 
   ngOnInit(): void {
-    this.http.get('/api/articles.json').subscribe((value: any[]) => {
+    this.datasvc.loadArticle().subscribe((value: any[]) => {
       this.data = value;
     });
   }
