@@ -41,8 +41,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "blog-index.html",
-              "api",
+              "src/blog-index.html",
+              "src/api",
               "src/favicon.ico",
               "src/assets"
             ],
