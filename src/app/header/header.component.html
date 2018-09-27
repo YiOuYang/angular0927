@@ -24,7 +24,7 @@
   <div class="title-wrapper">
     <div class="container">
 
-      <img (click)="changeTitle()" src="/assets/images/logo.png" class="pull-left logo" [title]="sitename">
+      <img (click)="changeTitle($event)" src="/assets/images/logo.png" class="pull-left logo" [title]="sitename">
 
       <div class="pull-left">
         <h1><a [href]="sitelink">{{ sitename }}</a></h1>
