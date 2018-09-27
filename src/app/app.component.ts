@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   keyword = 'demo1';
   data: any[];
+  max = 5;
   constructor(private http: HttpClient) {
   }
 
@@ -19,6 +20,7 @@ export class AppComponent {
   }
 
   doSearch(value) {
+    this.max++;
     this.keyword = value;
   }
 
