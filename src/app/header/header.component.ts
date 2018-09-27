@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
   sitelink = 'http://blog.miniasp.com/';
   subtitle = '記載著 Will 在網路世界的學習心得與技術分享';
 
+  counter = 0;
+
   constructor() { }
 
   ngOnInit() {
@@ -21,6 +23,9 @@ export class HeaderComponent implements OnInit {
     console.log(evt);
     if (evt.ctrlKey) {
       this.sitename = environment.sitename;
+      this.counter--;
+    } else {
+      this.counter++;
     }
   }
 
