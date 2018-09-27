@@ -9,6 +9,7 @@ import { environment } from '../../environments/environment';
 export class HeaderComponent implements OnInit {
 
   sitename = 'Hello World';
+  sitelink = 'http://blog.miniasp.com/';
 
   constructor() { }
 
